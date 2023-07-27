@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    margin: 0;
+    padding: 0;
+
+ box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none; 
+  }
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0A2540;
+   
+}
+  .navbar-nav {
+    margin: auto;
+    
+   
+}
+
+.navbar-nav .nav-link {
+    /* margin-right: 10px;  */
+    color: #fff;
+}
+  .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid #eb5454;
+  }
+
+
+
+  
+/* Style the section with background color */
+.section-with-bg {
+    background-color: #0A2540;
+    position: relative;
+    height: 450px;   
+    background-image: url("images/image-1.png"), url(images/image\ 7.png);
+    background-repeat: no-repeat;
+    background-size: contain, 120px;
+    background-blend-mode: soft-light;
+    background-position: bottom,left top; 
+   
+  }
+
+   /* Custom CSS for styling the carousel */
+   .owl-carousel .owl-stage-outer {
+    padding: 10px 0;
+}
+
+.owl-carousel .owl-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin-left: 5px;
+  
+}
+
+.testimonial-card {
+    position: relative;
+    max-width: 100%;
+    max-height: 100;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto 0 20px;
+    background-color: #fff;
+    
+}
+ .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top:5px; /* Adjust the space between the dots and the cards */
+} 
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid #D91F27;
+     margin: 0 5px -25px;        /*  to move image to bottom */
+}
+
+
+
+.testimonial-text {
+    font-size: 14px;
+}
+
+/* Optional: Adjust the carousel container size */
+.owl-carousel {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+padding: 30px 0;
+}
+
+footer h5 {
+font-size: 18px;
+font-weight: bold;
+}
+
+footer img {
+max-width: 100%;
+}
+
+footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+footer li {
+margin-left: 15px;
+margin-bottom: 5px;
+}
+.list-unstyle a{
+color: black; /* Set link color to black */
+text-decoration: none; 
+}
+
+.btn {
+background-color:  #00ACEE;
+
+
+}
+
+
+/* Style the dotted line */
+.row-divider {
+border-top: 1px dashed #000;
+width: 100;
+height: 2px;
+margin-top: 10px;
+padding-top: 10px;
+}
+
+  
+
+  @media (max-width: 768px) {
+  .navbar{
+    position: none;
+  }
+    
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-link:hover{
+        border-bottom: none;
+      }
+
+    .btn{
+      margin: auto;
+      
+       
+      }
+
+
+    .col-md-6 {
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+    .heading h1{
+        font-size: 20px;
+
+}
+.heading p{
+    font-size: 13px;
+}
+    .btn{
+        margin: 0;
+        font-size: 10px;
+    }
+    .col-md-6 img {
+        display: none;
+       
+    }
+    .section-with-bg {
+        margin-top: -30%;
+    }
+
+   
+/* Make the content responsive */
+
+    .row-divider {
+        border-top:none;
+    }
+    .content {
+        text-align: center;
+    }
+
+    .content .col-md-6 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    
+}
